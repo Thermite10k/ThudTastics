@@ -34,7 +34,7 @@ function App() {
         endColor={"red"}
         textColor={"white"}
       />
-      {speed}
+      {speed} RPM
     </div>
   );
 }
