@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import ReactSpeedometer from "react-d3-speedometer";
 
 function App() {
+  const [speed, setSpeed] = useState();
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      axios({
+        method: "get",
+        url: `http://localhost:8111/state`,
+        withCredentials: false,
+      }).then((res) => {
+        setSpeed(res.data["RPM 1"]);
+      });
+    }, 100);
+    return () => clearInterval(interval);
+  }, []);
+
+  const fetchData = () => {};
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ReactSpeedometer
+        value={speed}
+        currentValueText="RPM"
+        minValue={0}
+        maxValue={10000}
+        segments={10}
+        startColor={"white"}
+        endColor={"red"}
+        textColor={"white"}
+      />
+      {speed}
     </div>
   );
 }
