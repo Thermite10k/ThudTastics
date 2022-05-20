@@ -1,0 +1,10 @@
+.fuelContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(44, 42, 42);
+  border-radius: 5px;
+  padding: 15px;
+  width: 150px;
+  height: 75px;
+  justify-content: center;
+}
