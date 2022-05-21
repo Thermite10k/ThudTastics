@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  background-color: rgb(243, 151, 151);
+  background-color: rgb(109, 126, 173);
   width: auto;
+  font-family: "Heebo", sans-serif;
 }
 .App {
   min-height: 100vh;
@@ -20,8 +21,10 @@ body {
   margin: 15px;
   display: flex;
   padding: 25px;
-  background-color: rgb(76, 71, 71);
+  background-color: rgb(70, 58, 58);
+
   justify-content: space-between;
+  border-radius: 5px;
 
   flex-wrap: wrap;
 }
@@ -43,6 +46,7 @@ body {
   border-radius: 10000px;
   background-color: rgba(97, 13, 93, 0.2);
   margin: auto;
+  font-family: "Heebo";
 }
 .MeterContainer-2 {
   padding: 15px;
@@ -50,6 +54,7 @@ body {
   margin: 15px 15px 15px 15px;
 
   background-color: rgba(97, 13, 93, 0.2);
+  font-family: "Heebo";
 }
 
 div.alert::before {

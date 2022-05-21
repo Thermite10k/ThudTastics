@@ -16,7 +16,7 @@ function RPM(props) {
         width={width}
         minValue={0}
         maxValue={10000}
-        segments={height && height < 300 ? 3 : 10}
+        segments={height && height < 150 ? 3 : 10}
         startColor={"white"}
         endColor={"red"}
         textColor={"white"}

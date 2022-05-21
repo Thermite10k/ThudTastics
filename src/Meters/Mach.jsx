@@ -17,7 +17,7 @@ function Mach(props) {
         minValue={0}
         maxValue={2.5}
         segments={300}
-        customSegmentStops={[0, 0.9, 1.2, 1.4, 2, 2.5]}
+        customSegmentStops={[0, 0.75, 1.2, 1.5, 2, 2.5]}
         segmentColors={["white", "green", "orange", "orange", "red"]}
         textColor={"white"}
         labelFontSize={"12px"}
