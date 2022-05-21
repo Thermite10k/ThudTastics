@@ -1,11 +1,16 @@
 body {
   margin: 0;
-  background-color: gray;
+  background-color: rgb(243, 151, 151);
+  width: auto;
+}
+.App {
+  min-height: 100vh;
 }
 .all-container {
   display: flex;
+  min-height: 100vh;
 }
-.secondRow {
+.secondCol {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -13,11 +18,9 @@ body {
 .MetersContainer {
   max-width: 320px;
   margin: 15px;
-
-  border-radius: 5px;
   display: flex;
-  padding: 50px;
-  background-color: rgb(44, 42, 42);
+  padding: 25px;
+  background-color: rgb(76, 71, 71);
   justify-content: space-between;
 
   flex-wrap: wrap;
@@ -25,7 +28,7 @@ body {
 .MetersContainer-2 {
   margin: 15px;
   height: fit-content;
-  width: 100%;
+  width: auto;
   border-radius: 5px;
 
   display: flex;
@@ -40,7 +43,6 @@ body {
   border-radius: 10000px;
   background-color: rgba(97, 13, 93, 0.2);
   margin: auto;
-  margin-bottom: 10px;
 }
 .MeterContainer-2 {
   padding: 15px;
@@ -61,7 +63,7 @@ div.alert::before {
 .DigitsContainer {
   margin: 15px;
   height: fit-content;
-  width: 100%;
+  width: auto;
   border-radius: 5px;
 
   display: flex;
@@ -70,4 +72,7 @@ div.alert::before {
   justify-content: space-around;
 
   flex-wrap: wrap;
+}
+.digits {
+  margin: 10px 0;
 }

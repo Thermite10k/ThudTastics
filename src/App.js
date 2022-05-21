@@ -34,13 +34,18 @@ function App() {
       <div className="all-container">
         <div className="MetersContainer">
           <div className="MeterContainer">
-            <Speed speed={data["IAS, km/h"]} />
+            <Speed height={250} width={250} speed={data["IAS, km/h"]} />
           </div>
           <div className="MeterContainer">
-            <RPM className="meter" RPM={data["RPM 1"]} />
+            <RPM
+              className="meter"
+              height={250}
+              width={250}
+              RPM={data["RPM 1"]}
+            />
           </div>
         </div>
-        <div className="secondRow">
+        <div className="secondCol">
           <div className="MetersContainer-2">
             <div className="MeterContainer-2">
               <Mach height={150} width={150} machNumber={data["M"]} />
